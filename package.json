@@ -1,0 +1,32 @@
+{
+    "name": "@njkleiner/micropub-parser",
+    "version": "0.0.0",
+    "description": "Parse Micropub requests",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --recursive test/"
+    },
+    "dependencies": {},
+    "directories": {
+        "test": "test"
+    },
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+        "micropub",
+        "indieweb"
+    ],
+    "author": "Noah Kleiner <noah@njkleiner.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "mocha": "^7.1.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/njkleiner/micropub-parser"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
