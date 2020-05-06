@@ -58,11 +58,11 @@ class MicropubRequest {
         }
 
         for (let [key, value] of Object.entries(this.update.add)) {
-            if (!(key in target['properties'])) {
+            if (!(key in target['properties'] && Array.isArray(target['properties'][key]))) {
                 target['properties'][key] = [];
             }
 
-            target['properties'][key] = target['properties'][key].concat(value);
+            target['properties'][key] = [...new Set(target['properties'][key].concat(value))];
         }
 
         if (Array.isArray(this.update.delete)) {

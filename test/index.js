@@ -747,6 +747,42 @@ describe('parseJSON', () => {
         assert.deepEqual(request.apply(target), expected);
     });
 
+    it('should apply update (add [concat]) requests without duplicates', () => {
+        const request = micropub.parseJSON({
+            'action': 'update',
+            'url': 'https://example.com/posts/hello-world',
+            'add': {
+                'category': [
+                    'indieweb'
+                ]
+            }
+        });
+
+        const target = {
+            'type': [
+                'h-entry'
+            ],
+            'properties': {
+                'category': [
+                    'indieweb'
+                ]
+            }
+        };
+
+        const expected = {
+            'type': [
+                'h-entry'
+            ],
+            'properties': {
+                'category': [
+                    'indieweb'
+                ]
+            }
+        };
+
+        assert.deepEqual(request.apply(target), expected);
+    });
+
     it('should apply update (add [create]) requests', () => {
         const request = micropub.parseJSON({
             'action': 'update',
