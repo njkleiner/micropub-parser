@@ -2,16 +2,17 @@
     "name": "@njkleiner/micropub-parser",
     "version": "0.0.0",
     "description": "Parse Micropub requests",
-    "main": "index.js",
+    "main": "lib/index.js",
     "scripts": {
         "test": "mocha --recursive test/"
     },
     "dependencies": {},
     "directories": {
-        "test": "test"
+        "test": "test",
+        "lib": "lib"
     },
     "files": [
-        "index.js"
+        "lib"
     ],
     "keywords": [
         "micropub",
