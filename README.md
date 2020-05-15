@@ -9,7 +9,7 @@ Parse [Micropub](https://www.w3.org/TR/micropub/) requests.
 ## Usage
 
 ```javascript
-const micropub = require('@njkleiner/micropub');
+const micropub = require('@njkleiner/micropub-parser');
 
 micropub.parseForm({
     'h': 'entry',
