@@ -17,7 +17,7 @@ micropub.parseForm({
     'content': 'Hello World',
     'mp-slug': 'hello-world'
 });
-// => {'type': 'entry', 'action': 'create', 'properties': {'content': ['Hello World']}, 'commands': {'slug': ['hello-world']}}
+// => {'type': 'h-entry', 'action': 'create', 'properties': {'content': ['Hello World']}, 'commands': {'slug': ['hello-world']}}
 
 micropub.parseJSON({
     'type': [
