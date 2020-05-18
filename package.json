@@ -1,6 +1,6 @@
 {
     "name": "@njkleiner/micropub-parser",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Parse Micropub requests",
     "main": "lib/index.js",
     "scripts": {
