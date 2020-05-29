@@ -1,4 +1,4 @@
-# micropub-parser
+# micropub-parser ![Build Status](https://img.shields.io/travis/njkleiner/micropub-parser/develop) ![NPM Downloads](https://img.shields.io/npm/dm/@njkleiner/micropub-parser)
 
 Parse [Micropub](https://www.w3.org/TR/micropub/) requests.
 
